@@ -12,13 +12,14 @@ export RUST_BACKTRACE=0
 
 #git
 alias gp='git pull'
-alias gm='git merge main'
+alias gm='git merge'
 alias gpu='git push'
 alias gc='git checkout'
 alias gs='git status'
 alias gd='git diff'
 alias gcm='git commit -m'
 alias gcam='git commit -am'
+alias gsc='git switch -c'
 
 #k8s
 alias k='kubectl'
