@@ -20,6 +20,7 @@ alias gd='git diff'
 alias gcm='git commit -m'
 alias gcam='git commit -am'
 alias gsc='git switch -c'
+alias gpun='git push --set-upstream origin'
 
 #k8s
 alias k='kubectl'
