@@ -3,7 +3,7 @@ alias life="/Users/suryapandian/repo/personal/magic"
 
 #rust
 alias cf='cargo fmt'
-alias cb=' cargo build --workspace --all-targets'
+alias cb='cargo fmt && cargo build --workspace --all-targets'
 alias cc='cargo clippy --all-targets --all-features --workspace'
 alias ct='cargo test'
 alias cr='cargo run'
