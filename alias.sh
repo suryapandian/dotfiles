@@ -1,6 +1,6 @@
 alias pl="/Users/suryapandian/repo/personal"
 alias life="/Users/suryapandian/repo/personal/magic"
- alias cat='bat --plain --theme=Nord --paging=never'
+alias cat='bat --plain --theme=Nord --paging=never'
 
 #rust
 alias cf='cargo fmt'
