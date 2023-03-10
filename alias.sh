@@ -1,9 +1,10 @@
 alias pl="/Users/suryapandian/repo/personal"
 alias life="/Users/suryapandian/repo/personal/magic"
+alias cat='bat --plain --theme=Nord --paging=never'
 
 #rust
 alias cf='cargo fmt'
-alias cb=' cargo build --workspace --all-targets'
+alias cb='cargo fmt && cargo build --workspace --all-targets'
 alias cc='cargo clippy --all-targets --all-features --workspace'
 alias ct='cargo test'
 alias cr='cargo run'
