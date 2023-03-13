@@ -6,8 +6,8 @@ $jobs$character\
 add_newline = true
 
 [character]
-success_symbol = "[❯](bold blue)"
-error_symbol = "[❯](bold red)"
+success_symbol = "[🌸 ](bold blue)"
+error_symbol = "[🥀 ](bold red)"
 
 [directory]
 style = "blue"
@@ -17,7 +17,7 @@ style = "bold yellow"
 
 [git_status]
 format = "[($staged)](yellow)[($untracked)](blue)[($deleted)](red)[($modified)](green) "
-conflicted = "✘"
+conflicted = "😳 "
 untracked  = "●"
 modified   = "●"
 staged     = "●"
@@ -31,4 +31,4 @@ format = "[$number$symbol]($style) "
 [kubernetes]
 disabled = false
 symbol = "☸ "
-format = '($symbol)cx:$context @ ns:$namespace '
+format = '($symbol)[$context](bold green) 🦋  [$namespace](bold yellow)'
