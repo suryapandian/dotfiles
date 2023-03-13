@@ -31,4 +31,4 @@ format = "[$number$symbol]($style) "
 [kubernetes]
 disabled = false
 symbol = "☸ "
-format = '($symbol)[$context](bold green) 🦋  [$namespace](bold yellow)'
+format = '($symbol)[$context](bold green)🦋[$namespace](bold yellow)'
