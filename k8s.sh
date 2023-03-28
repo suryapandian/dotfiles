@@ -1,9 +1,9 @@
 alias k=kubectl
-complete -F __start_kubectl k # autocomplete k
+#complete -F __start_kubectl k # autocomplete k
 
 # get yaml object instead of applying the changes
 alias kg="kubectl --dry-run=client -o yaml get"
-complete -F __start_kubectl kd
+#complete -F __start_kubectl kd
 
 alias kr="kubectl replace -f"
 alias kad="kubectl --dry-run=client apply -f"
@@ -15,7 +15,7 @@ alias kde="kubectl describe"
 alias kg="kubectl get"
 alias kc="kubectl create"
 alias kr="kubectl replace -f"
-complete -F __start_kubectl kD
+#complete -F __start_kubectl kD
 
 export d='--dry-run=client'
 export o='-o yaml'

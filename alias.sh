@@ -1,7 +1,7 @@
 alias pl="/Users/suryapandian/repo/personal"
 alias life="/Users/suryapandian/repo/personal/magic"
-alias cat='bat --plain --theme=Nord --paging=never'
-
+alias cat='bat -n --plain --theme=Nord --paging=never'
+alias clion='open -na "CLion.app"'
 #rust
 alias cf='cargo fmt'
 alias cb='cargo fmt && cargo build --workspace --all-targets'
