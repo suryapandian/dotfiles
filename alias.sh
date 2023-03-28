@@ -1,5 +1,5 @@
-alias pl="/Users/suryapandian/repo/personal"
-alias life="/Users/suryapandian/repo/personal/magic"
+alias pl="cd /Users/suryapandian/repo/pl"
+alias life="/Users/suryapandian/repo/pl/magic"
 alias cat='bat -n --plain --theme=Nord --paging=never'
 alias clion='open -na "CLion.app"'
 #rust
@@ -26,7 +26,7 @@ alias gcm='git commit -m'
 alias gcam='git commit -am'
 alias gsc='git switch -c'
 alias gpun='git push --set-upstream origin'
-alias gprune='git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d'
+#alias gprune='git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d'
 
 #k8s
 alias k='kubectl'
