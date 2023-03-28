@@ -5,11 +5,15 @@ alias clion='open -na "CLion.app"'
 #rust
 alias cf='cargo fmt'
 alias cb='cargo fmt && cargo build --workspace --all-targets'
-alias cc='cargo clippy --all-targets --all-features --workspace'
+alias cc='cargo fmt && check --all-targets --all-features --workspace'
 alias ct='cargo test'
 alias cr='cargo run'
+alias cw='cargo watch'
+
 ulimit -n 24000
 export RUST_BACKTRACE=0
+
+alias z='zellij'
 
 #git
 alias gp='git pull'
@@ -22,6 +26,7 @@ alias gcm='git commit -m'
 alias gcam='git commit -am'
 alias gsc='git switch -c'
 alias gpun='git push --set-upstream origin'
+alias gprune='git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d'
 
 #k8s
 alias k='kubectl'
