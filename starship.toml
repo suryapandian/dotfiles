@@ -6,7 +6,7 @@ $jobs$character\
 add_newline = true
 
 [character]
-success_symbol = "[🌸](bold blue)"
+success_symbol = "🌸"
 error_symbol = "[🥀](bold red)"
 
 [directory]
@@ -21,7 +21,7 @@ conflicted = "😳 "
 untracked  = "●"
 modified   = "●"
 staged     = "●"
-deleted    = "●"
+deleted    = "🔴"
 
 [jobs]
 symbol = "●"
@@ -31,4 +31,4 @@ format = "[$number$symbol]($style) "
 [kubernetes]
 disabled = false
 symbol = "☸ "
-format = '($symbol)[$context](bold green)🦋 [$namespace](bold yellow)'
+format = '($symbol)[$context](bold green) 💐 [$namespace](bold yellow)'
