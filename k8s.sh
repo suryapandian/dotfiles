@@ -13,13 +13,15 @@ alias ka="kubectl apply -f"
 alias kx="kubectl delete --grace-period=0 --force"
 alias kde="kubectl describe"
 alias kg="kubectl get"
-alias kc="kubectl create"
+#alias kc="kubectl create"
 alias kr="kubectl replace -f"
 #complete -F __start_kubectl kD
 
 export d='--dry-run=client'
 export o='-o yaml'
 export do='--dry-run=client -o yaml'
+
+#Copied from https://github.com/clux/dotfiles/blob/main/.k8s-helpers
 
 kpfs() {
   local -r service="${1:-$(kubectl get service --no-headers | choose 0 | fzf)}"
@@ -32,4 +34,16 @@ kpfs() {
   local -r port="$(echo "${portjson}" | jq ".port" -r)"
   echo "Forwarding to svc/${service}:${port} via local 8000"
   kubectl port-forward "svc/${service}" "8000:${port}"
+}
+
+kns() {
+  local -r ns="${1:-$(kubectl get ns --no-headers | choose 0 | fzf)}"
+  local -r ctx="$(kubectl config current-context)"
+  kubectl config set "contexts.${ctx}.namespace" "${ns}"
+}
+
+kc() {
+  # Relies on KUBECONFIG set to colon delimeted list of all kubeconfigs ^
+  # Exclude fqdn contexts (rancher-ism).
+  kubectl config use-context "$(kubectl config get-contexts -o name | grep -v fqdn | fzf)"
 }
