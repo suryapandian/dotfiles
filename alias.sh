@@ -4,7 +4,7 @@ alias cat='bat -n --plain --theme=Nord --paging=never'
 
 #rust
 alias cf='cargo fmt'
-alias cb='cargo fmt && cargo build --workspace --all-targets'
+alias cb='clear && cargo fmt && cargo build --workspace --all-targets'
 alias cc='cargo fmt && check --all-targets --all-features --workspace'
 alias ct='cargo test'
 alias cr='cargo run'
@@ -24,7 +24,7 @@ alias gcm='git commit -s -m'
 alias gcam='git commit -s -am'
 alias gsc='git switch -c'
 alias gpun='git push --set-upstream origin'
-#alias gprune='git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d'
+alias gprune='git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d'
 
 #k8s
 alias k='kubectl'
