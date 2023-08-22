@@ -6,3 +6,4 @@ brew install kubectl
 brew install pass
 brew install zoxide
 brew install fzf
+brew install atuin
