@@ -4,11 +4,13 @@ alias cat='bat -n --plain --theme=Nord --paging=never'
 
 #rust
 alias cf='cargo fmt'
-alias cb='clear && cargo fmt && cargo build --workspace --all-targets'
+alias cb='clear && cargo fmt && cargo fix --allow-dirty && cargo build --workspace --all-targets'
 alias cc='cargo fmt && check --all-targets --all-features --workspace'
 alias ct='cargo test'
 alias cr='cargo run'
 alias cw='cargo watch'
+alias releaser='/Users/suryapandian/repo/tl/releaser/target/debug/releaser'
+alias clipper='/Users/suryapandian/repo/tl/rust-clipper/target/debug/clipper'
 
 ulimit -n 24000
 export RUST_BACKTRACE=0

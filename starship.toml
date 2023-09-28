@@ -1,26 +1,27 @@
 format="""
-$directory$kubernetes$git_branch$git_state$git_status
+$directory$git_branch$git_state$git_status$kubernetes
 $jobs$character\
 """
 
 add_newline = true
 
 [character]
-success_symbol = "🌸"
-error_symbol = "[🥀](bold red)"
+success_symbol = "🪲"
+error_symbol = "[🐛](bold red)"
 
 [directory]
-style = "blue"
+style = "purple"
 
 [git_branch]
-style = "bold yellow"
+style = "cyan"
+
 
 [git_status]
-format = "[($staged)](yellow)[($untracked)](blue)[($deleted)](red)[($modified)](green) "
+format = " [($staged)](yellow)[($untracked)](blue)[($deleted)](red)[($modified)](green) "
 conflicted = "😳 "
-untracked  = "●"
-modified   = "●"
-staged     = "●"
+untracked  = "🦖"
+modified   = "🐥"
+staged     = "🌱"
 deleted    = "🔴"
 
 [jobs]
@@ -31,4 +32,4 @@ format = "[$number$symbol]($style) "
 [kubernetes]
 disabled = false
 symbol = "☸ "
-format = '($symbol)[$context](bold green) 💐 [$namespace](bold yellow)'
+format = '($symbol)[$context](bold green) ⛵ [$namespace](bold yellow)'
