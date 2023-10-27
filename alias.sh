@@ -36,4 +36,4 @@ alias cctxt='kubectl config view --minify'
 export SPACESHIP_PROMPT_SEPARATE_LINE=true
 export SPACESHIP_KUBECTL_SHOW=true
 
-alias s='subl .'
+alias s='rustrover .'
