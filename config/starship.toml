@@ -1,13 +1,13 @@
 format="""
 $directory$git_branch$git_state$git_status$kubernetes
-$jobs$character\
+$jobs$character
 """
 
 add_newline = true
 
 [character]
 success_symbol = "🪲"
-error_symbol = "[🐛](bold red)"
+error_symbol = "🐞"
 
 [directory]
 style = "purple"
@@ -19,10 +19,10 @@ style = "cyan"
 [git_status]
 format = " [($staged)](yellow)[($untracked)](blue)[($deleted)](red)[($modified)](green) "
 conflicted = "😳 "
-untracked  = "🦖"
+untracked  = "🦎"
 modified   = "🐥"
 staged     = "🌱"
-deleted    = "🐞"
+deleted    = "🦖"
 
 [jobs]
 symbol = "●"
@@ -31,5 +31,5 @@ format = "[$number$symbol]($style) "
 
 [kubernetes]
 disabled = false
-symbol = "☸ "
+symbol = "☸"
 format = '($symbol)[$context](bold green) 🦋 [$namespace](bold yellow)'
