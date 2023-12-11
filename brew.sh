@@ -7,3 +7,4 @@ brew install pass
 brew install zoxide
 brew install fzf
 brew install atuin
+brew install kondo
