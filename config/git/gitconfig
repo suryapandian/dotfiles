@@ -1,0 +1,35 @@
+[core]
+	excludesfile = /Users/suryapandian/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	email = surya.pandian@truelayer.com
+	name = suryapandian
+	signingkey = 97A05404B2CBD17C
+[credential]
+	helper = store
+[push]
+	autoSetupRemote = true
+[commit]
+	gpgsign = true
+[pull]
+	rebase = false
+[alias]
+s   = status -s -b
+l   = !git ll -20
+ll  = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
+prs = !GH_FORCE_TTY="100%" gh pr list | fzf --ansi --header-lines 4 --reverse | awk '{print $1}' | xargs gh pr checkout
+checks = !GH_FORCE_TTY=$((2**16)) gh pr checks | fzf --ansi --header-lines 3 --reverse | choose 3 | xargs open
+check = !gh pr checks
+
+[color "status"]
+added = yellow
+changed = green
+untracked = blue
+deleted = red
+[safe]
+	bareRepository = explicit

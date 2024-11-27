@@ -11,6 +11,13 @@ alias cr='cargo run'
 alias cw='cargo watch'
 alias releaser='/Users/suryapandian/repo/tl/releaser/target/debug/releaser'
 alias clipper='/Users/suryapandian/repo/tl/rust-clipper/target/debug/clipper'
+alias lspods='/Users/suryapandian/repo/tl/lspods/target/debug/lspods'
+alias gitopspull='for d in $(fd . --type d --max-depth 1); do
+ cd $d
+ git checkout master
+ git pull
+ cd ..
+done'
 
 ulimit -n 24000
 export RUST_BACKTRACE=0
@@ -27,6 +34,7 @@ alias gcam='git add . && git commit -s -am'
 alias gsc='git switch -c'
 alias gpun='git push --set-upstream origin'
 alias gprune='git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d'
+alias gpr='gh pr create --fill'
 
 #k8s
 alias k='kubectl'
