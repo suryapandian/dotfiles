@@ -31,5 +31,3 @@ added = yellow
 changed = green
 untracked = blue
 deleted = red
-[safe]
-	bareRepository = explicit

@@ -18,6 +18,7 @@ alias gitopspull='for d in $(fd . --type d --max-depth 1); do
  git pull
  cd ..
 done'
+alias rr='open -na "RustRover.app" --args "$@"'
 
 ulimit -n 24000
 export RUST_BACKTRACE=0
