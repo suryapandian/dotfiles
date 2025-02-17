@@ -19,6 +19,7 @@ alias gitopspull='for d in $(fd . --type d --max-depth 1); do
  cd ..
 done'
 alias rr='open -na "RustRover.app" --args "$@"'
+alias sans='cd /Users/suryapandian/repo/pl/ससकतम'
 
 ulimit -n 24000
 export RUST_BACKTRACE=0
@@ -45,4 +46,4 @@ alias cctxt='kubectl config view --minify'
 export SPACESHIP_PROMPT_SEPARATE_LINE=true
 export SPACESHIP_KUBECTL_SHOW=true
 
-alias s='rustrover .'
+alias s='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
