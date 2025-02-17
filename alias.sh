@@ -37,6 +37,7 @@ alias gsc='git switch -c'
 alias gpun='git push --set-upstream origin'
 alias gprune='git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d'
 alias gpr='gh pr create --fill'
+alias gpre='gh pr comment --body "/pretag"'
 
 #k8s
 alias k='kubectl'
