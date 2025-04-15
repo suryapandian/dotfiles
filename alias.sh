@@ -9,6 +9,7 @@ alias cc='cargo fmt && check --all-targets --all-features --workspace'
 alias ct='cargo test'
 alias cr='cargo run'
 alias cw='cargo watch'
+alias ci='cargo fmt && cargo clippy --all-targets --workspace  -- -D warnings'
 alias releaser='/Users/suryapandian/repo/tl/releaser/target/debug/releaser'
 alias clipper='/Users/suryapandian/repo/tl/rust-clipper/target/debug/clipper'
 alias lspods='/Users/suryapandian/repo/tl/lspods/target/debug/lspods'
@@ -39,9 +40,6 @@ alias gprune='git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs
 alias gpr='gh pr create --fill'
 alias gpre='gh pr comment --body "/pretag"'
 
-#k8s
-alias k='kubectl'
-alias kp='k get pods'
 alias cctxt='kubectl config view --minify'
 
 export SPACESHIP_PROMPT_SEPARATE_LINE=true

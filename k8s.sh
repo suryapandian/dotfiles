@@ -14,6 +14,7 @@ alias kx="kubectl delete --grace-period=0 --force"
 alias kde="kubectl describe"
 alias kg="kubectl get"
 alias kp='k get pods'
+alias kpg='k get pods | rg'
 alias cctxt='kubectl config view --minify'
 #alias kc="kubectl create"
 alias kr="kubectl replace -f"
