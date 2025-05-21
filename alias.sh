@@ -3,14 +3,14 @@ alias life="cd /Users/suryapandian/repo/pl/magic"
 alias cat='bat -n --plain --theme=Nord --paging=never'
 
 #rust
-alias cf='cargo fmt'
+alias cf='clear && cargo fmt'
 alias cb='clear && cargo fmt && cargo fix --allow-dirty && cargo build --workspace --all-targets'
 alias cc='cargo fmt && check --all-targets --all-features --workspace'
 alias ct='cargo test'
 alias cr='cargo run'
 alias cw='cargo watch'
-alias ci='cargo fmt && cargo clippy --all-targets --workspace  -- -D warnings'
-alias releaser='/Users/suryapandian/repo/tl/releaser/target/debug/releaser'
+alias ci='clear && cargo fmt && cargo clippy --all-targets --workspace  -- -D warnings'
+alias releaser='clear && /Users/suryapandian/repo/tl/releaser/target/debug/releaser'
 alias clipper='/Users/suryapandian/repo/tl/rust-clipper/target/debug/clipper'
 alias lspods='/Users/suryapandian/repo/tl/lspods/target/debug/lspods'
 alias gitopspull='for d in $(fd . --type d --max-depth 1); do
