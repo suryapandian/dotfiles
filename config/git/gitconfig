@@ -1,5 +1,6 @@
 [core]
 	excludesfile = /Users/suryapandian/.gitignore_global
+	editor = subl -n -w
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -31,3 +32,5 @@ added = yellow
 changed = green
 untracked = blue
 deleted = red
+[url "git@github.com:"]
+	insteadOf = https://github.com/

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Check if there are Rust files in the git diff and Cargo.toml exists
+if [ -f "Cargo.toml" ] && git diff --name-only --cached | grep -q '\.rs$'; then
+    echo "Found Rust files in diff. Running cargo fmt and fix..."
+    cargo fmt
+    echo "Format done. Now running 'cargo fix --allow-dirty'"
+    cargo fix --allow-dirty
+elif [ -f "Cargo.toml" ]; then
+    echo "Cargo.toml found but no Rust files in diff. Skipping cargo commands."
+else
+    echo "Cargo.toml not found. Skipping cargo commands."
+fi
+git add . && git commit -S -s -am "$1"
